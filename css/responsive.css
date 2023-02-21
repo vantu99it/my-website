@@ -1,0 +1,74 @@
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1023px) {
+}
+@media only screen and (max-width: 767px) {
+  .hide {
+    display: none;
+  }
+  /* header */
+  .header {
+    flex-direction: column;
+  }
+  .header__left {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__social {
+    justify-content: center;
+  }
+  .header__right {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .row .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    top: auto;
+    border-radius: 0;
+    padding: 0;
+  }
+  .sidebar .nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sidebar .nav-item {
+    margin: 0;
+  }
+  .sidebar .nav-item a {
+    border-radius: 0px;
+    font-size: 12px;
+  }
+  .sidebar .nav-item a.active,
+  .sidebar .nav-item a:hover {
+    color: #f60;
+    font-weight: 700;
+    border: none;
+    border-bottom: 4px solid #f60;
+  }
+  /* -----project */
+  .project {
+    display: block;
+  }
+  .project__introduce {
+    margin: 16px 0 8px;
+  }
+  /* contact */
+  .contact__input-group {
+    display: block;
+  }
+  /* #top-up */
+  #top-up {
+    bottom: 115px;
+  }
+}
+@media only screen and (max-width: 599px) {
+}
+@media only screen and (max-width: 479px) {
+}
