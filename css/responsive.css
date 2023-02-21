@@ -3,6 +3,9 @@
 @media only screen and (max-width: 1023px) {
 }
 @media only screen and (max-width: 767px) {
+  .body {
+    margin-bottom: 40px;
+  }
   .hide {
     display: none;
   }
