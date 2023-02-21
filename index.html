@@ -31,7 +31,7 @@
             </div>
             <div class="header__base-info">
               <h3 class="title title--h4">Nguyễn Văn Tú</h3>
-              <p class="status">Lập trình viên font-end</p>
+              <p class="status">Lập trình viên front-end</p>
               <ul class="header__social">
                 <p style="margin-right: 16px; text-decoration: underline">
                   Follow Me:
@@ -79,7 +79,7 @@
                 <span class="overhead">
                   <i class="fa-solid fa-cake-candles"></i> Ngày Sinh</span
                 >
-                <p class="detail">16/03/1999</p>
+                <p class="detail">10/08/1999</p>
               </li>
               <li>
                 <span class="overhead"
@@ -96,23 +96,25 @@
         <div class="row">
           <!-- sidebar-nav -->
           <aside class="col-12 col-md-12 col-lg-2">
-            <div class="sidebar box">
+            <div class="sidebar box" id="sidebar">
               <ul class="nav">
                 <li class="nav-item">
-                  <a href="#introduce" class="active"
+                  <a href="./index.html#introduce" class="active"
                     ><i class="fa-regular fa-user"></i>Giới thiệu
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#skill"
+                  <a href="index.html#skill"
                     ><i class="fa-solid fa-list-check"></i> Kỹ năng</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a href=""><i class="fa-solid fa-code"></i> Sản phầm</a>
+                  <a href="./index.html#project"
+                    ><i class="fa-solid fa-code"></i> Sản phầm</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a href=""
+                  <a href="./index.html#contact"
                     ><i class="fa-solid fa-address-card"></i> Liên hệ</a
                   >
                 </li>
@@ -133,7 +135,7 @@
                 </p>
                 <p class="content__text">
                   Xin giới thiệu, tôi tên là <b>Nguyễn Văn Tú</b>, sinh ngày
-                  16/04/1999.
+                  10/08/1999.
                 </p>
                 <p class="content__text">
                   Tôi là một người vui vẻ, hòa đồng, ham học hỏi, có thể thích
@@ -194,7 +196,7 @@
                       <span class="skill__name"> JavaScript </span>
                       <div class="skill__bar">
                         <span class="skill__per js">
-                          <span class="number">70%</span>
+                          <span class="number">60%</span>
                         </span>
                       </div>
                     </div>
@@ -202,6 +204,14 @@
                       <span class="skill__name"> PHP </span>
                       <div class="skill__bar">
                         <span class="skill__per php">
+                          <span class="number">50%</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="skill__box">
+                      <span class="skill__name"> Photoshop </span>
+                      <div class="skill__bar">
+                        <span class="skill__per photoshop">
                           <span class="number">50%</span>
                         </span>
                       </div>
@@ -218,7 +228,7 @@
                 </div>
               </div>
               <!-- project -->
-              <div class="pb-0 pb-sm-2 classify" id="skill">
+              <div class="pb-0 pb-sm-2 classify" id="project">
                 <h2 class="title title_separate">Sản phẩm đã làm</h2>
                 <div class="project">
                   <div class="project__image">
@@ -315,14 +325,58 @@
                   </div>
                 </div>
               </div>
+              <!-- contact -->
+              <div class="pb-0 pb-sm-2 classify" id="contact"></div>
+              <h2 class="title title_separate">Liên hệ</h2>
+              <div class="contact">
+                <form action="" method="post" id="frm-register">
+                  <div class="contact__input-group">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="fullname"
+                        id="fullname"
+                        placeholder="Tên của bạn..."
+                      />
+                      <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email..."
+                      />
+                      <span class="form-message"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      name="mess"
+                      id="mess"
+                      cols="30"
+                      rows="10"
+                      placeholder="Lời nhắn..."
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-submit" value="Gửi" />
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
+    <!-- top-up -->
+    <div title="Về đầu trang" id="top-up">
+      <i class="fa-solid fa-plane-up"></i>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="./libs/venobox/venobox.min.js"></script>
+    <script type="text/javascript" src="./js/validator-form.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

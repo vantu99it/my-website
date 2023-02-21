@@ -74,7 +74,7 @@ body {
   margin: 5px 0;
 }
 .btn:hover {
-  color: #ffffff;
+  color: #f60;
   background: none;
   border: 1px solid #f60;
 }
@@ -191,7 +191,10 @@ body {
 }
 /* content */
 /* --sidebar_nav */
-
+.sidebar.fix {
+  position: fixed;
+  top: 6px;
+}
 .sidebar .nav-item {
   display: block;
   height: 100px;
@@ -228,7 +231,8 @@ body {
 }
 /* --content_detail */
 .classify {
-  margin-bottom: 60px;
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
 /* ----introduce */
 .title_separate {
@@ -334,24 +338,31 @@ body {
   width: 90%;
   border-radius: 6px;
   background: #4070f4;
-  animation: progress 0.5s ease-in-out forwards;
+  /* animation: progress 0.5s ease-in-out forwards; */
   opacity: 0;
+}
+.skill__per.animation {
+  animation: progress 0.5s ease-in-out forwards;
 }
 .skill__per.css {
   width: 80%;
   animation-delay: 0.5s;
 }
 .skill__per.js {
-  width: 70%;
+  width: 60%;
   animation-delay: 1s;
 }
 .skill__per.php {
   width: 50%;
   animation-delay: 1.5s;
 }
+.skill__per.photoshop {
+  width: 50%;
+  animation-delay: 2s;
+}
 .skill__per.group {
   width: 85%;
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 
 @keyframes progress {
@@ -435,11 +446,55 @@ body {
   list-style-type: square;
   margin: 3px 4px 4px 30px;
 }
-.project_detail {
-}
 .project__preview {
   margin-top: 8px;
 }
 .project__preview i {
   margin-right: 8px;
+}
+/* ---Contact */
+.contact__input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-group {
+  flex: 1;
+  margin: 18px 16px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  outline-color: #41ff00;
+}
+.form-group input {
+  height: 45px;
+  padding: 6px 6px 6px 10px;
+}
+.form-group textarea {
+  padding: 14px;
+}
+.form-group .btn-submit {
+  width: 25%;
+}
+/* top-up */
+#top-up {
+  font-size: 3rem;
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+  color: #f73859;
+  bottom: 20px;
+  right: 15px;
+  display: none;
+  transform: rotateZ(300deg);
+  transition-duration: 0.4s;
+}
+#top-up:hover {
+  color: #1266dd;
+  transform: rotateZ(360deg);
+  transition-duration: 0.4s;
 }
